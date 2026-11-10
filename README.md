@@ -132,8 +132,8 @@ ignored. Choose a license with your colleagues before distributing the code publ
 - `pitch_demo/python/main.py`: automatic App Lab recording/playback loop.
 - `pitch_demo/python/pitch.py`: audio processing and standalone terminal demo.
 - `app.py` and root `requirements.txt`: earlier Whisper/Piper speech concept.
-- [Earlier speech project guide](docs/speech-bridge.md): retained background,
-  including the separate legacy R3/R4 controller. Use the new Q sketch for this demo.
+- `arduino/controller/controller.ino`: legacy external R3/R4 controller; use the
+  new Q sketch for this demo.
 
 References: [UNO Q manual](https://docs.arduino.cc/tutorials/uno-q/user-manual/),
 [Modulino Knob](https://docs.arduino.cc/tutorials/modulino-knob/how-knob/),
