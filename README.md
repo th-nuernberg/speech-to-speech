@@ -4,7 +4,8 @@ Give your voice a lift: record a phrase, turn a Modulino Knob, hear it at a high
 The STM32 shows the selected pitch on the UNO Q LED matrix. Python on the Q's Linux
 processor handles audio. No speech model or downloaded voice is required.
 
-This is a starter implementation, not yet tested on the physical board. It processes
+The organizer has tested recording, shifted playback, knob control and the LED marker
+on the physical UNO Q. It processes
 short recordings, not continuous live audio. Pitch is sampled before each playback;
 turning the knob during playback changes the next playback. The LEDs show the selected
 shift, not the measured pitch of your voice. +12 semitones doubles frequency while
@@ -43,7 +44,9 @@ Enter `r` to record three seconds, `o` to hear the original, `p` to hear the shi
 Use `--input-device N --output-device N` to select device IDs from the device list.
 `--seconds 5` changes recording length. Start at low headphone volume.
 The first pitch shift can be slow because numerical code initializes/compiles.
-Audio remains in RAM and is replaced by the next recording; no recordings are saved.
+The standalone terminal demo keeps audio in RAM. The App Lab version saves the latest
+`original.wav` and `shifted.wav` in `python/recordings/`, overwriting them each cycle.
+WAV recordings are excluded from Git. Delete these files when no longer needed.
 
 ## 2. Run the knob and matrix on the UNO Q
 
@@ -53,6 +56,7 @@ Audio remains in RAM and is replaced by the next recording; no recordings are sa
 3. Add **Arduino_Modulino** with its dependencies via the app's library management.
    `Arduino_LED_Matrix` comes from the UNO Q Zephyr core; use the Q version.
    The sketch also uses `Arduino_RouterBridge` supplied by the Q environment.
+   On current platforms it is bundled; do not add it as an explicit library dependency.
 4. Copy both `pitch_demo/python/main.py` and `pitch_demo/python/pitch.py` into
    the app's `python/` directory. Copy `requirements.txt` there too.
 5. Enable microphone and speaker/audio device access in App Lab if required by
@@ -102,8 +106,10 @@ python -m unittest discover -s tests -v
 
 Before the event: compile/upload the sketch; test both endpoint positions, knob
 recovery, recording and replay; time the first and subsequent pitch shifts; freeze
-the working dependencies in the board's Python environment. Hardware compilation,
-App Lab packaging/device permissions, and end-to-end audio remain bench checks.
+the working dependencies in the board's Python environment.
+Repeat these checks for each attendee setup. The organizer's end-to-end UNO Q audio,
+knob and LED test succeeded. Confirm you are listening to the headphones actually
+connected to the UNO Q USB audio adapter.
 
 ## Local Git and later collaboration
 
