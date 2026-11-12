@@ -111,29 +111,13 @@ Repeat these checks for each attendee setup. The organizer's end-to-end UNO Q au
 knob and LED test succeeded. Confirm you are listening to the headphones actually
 connected to the UNO Q USB audio adapter.
 
-## Local Git and later collaboration
-
-This folder is the local repository. Check changes with `git status` and create
-feature branches for attendee experiments. No remote is required for local work.
-Once you have created a remote repository on your chosen host:
-
-```sh
-git remote add origin <REMOTE_URL>
-git push -u origin main
-```
-
-Invite colleagues through your repository host's collaborator/team settings.
-Review the files before publishing; recordings and local IDE/environment files are
-ignored. Choose a license with your colleagues before distributing the code publicly.
-
-## Files and background
+## Repository files
 
 - `pitch_demo/sketch/sketch.ino`: Qwiic encoder, LED marker, Bridge getter.
 - `pitch_demo/python/main.py`: automatic App Lab recording/playback loop.
 - `pitch_demo/python/pitch.py`: audio processing and standalone terminal demo.
-- `app.py` and root `requirements.txt`: earlier Whisper/Piper speech concept.
-- `arduino/controller/controller.ino`: legacy external R3/R4 controller; use the
-  new Q sketch for this demo.
+- `pitch_demo/python/requirements.txt`: pitch demo dependencies.
+- `tests/test_pitch.py`: audio processing checks that run without the board.
 
 References: [UNO Q manual](https://docs.arduino.cc/tutorials/uno-q/user-manual/),
 [Modulino Knob](https://docs.arduino.cc/tutorials/modulino-knob/how-knob/),
