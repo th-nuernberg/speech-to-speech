@@ -28,11 +28,14 @@ USB microphone → Linux/Python → pitch shift → USB audio/headphones
 
 ### Keyboard
 
+Install the virtual keyboard:
+
 ```sudo apt install onboard ```
 
-Install first and them the log in accessibility feature with virtual keyboard becomes available
+Then it can be selected in the list of accessibility features in the log in screen.
  
-Lighter (do not work for log in)
+Lighter (do not work for log in):
+
 ``` sudo apt install matchbox-keyboard ```
 
 
