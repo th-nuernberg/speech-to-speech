@@ -144,7 +144,7 @@ References: [UNO Q manual](https://docs.arduino.cc/tutorials/uno-q/user-manual/)
 - Technical Quality (20%)
 - Real world impact (20%)
 - Environmental Impact SCI (20%)
-   [GrennSoftwareFoundation](https://sci.greensoftware.foundation/)
+   [GreenSoftwareFoundation](https://sci.greensoftware.foundation/)
   
 
 
