@@ -138,6 +138,13 @@ References: [UNO Q manual](https://docs.arduino.cc/tutorials/uno-q/user-manual/)
 - 5-minute demo presentation
 - future roadmap 
 
+
 ## Evaluation Criteria 
+- Innovation (20%)
+- Technical Quality (20%)
+- Real world impact (20%)
+- Environmental Impact SCI (20%)
+   [GrennSoftwareFoundation](https://sci.greensoftware.foundation/)
+  
 
 
