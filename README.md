@@ -44,9 +44,8 @@ Enter `r` to record three seconds, `o` to hear the original, `p` to hear the shi
 Use `--input-device N --output-device N` to select device IDs from the device list.
 `--seconds 5` changes recording length. Start at low headphone volume.
 The first pitch shift can be slow because numerical code initializes/compiles.
-The standalone terminal demo keeps audio in RAM. The App Lab version saves the latest
-`original.wav` and `shifted.wav` in `python/recordings/`, overwriting them each cycle.
-WAV recordings are excluded from Git. Delete these files when no longer needed.
+Both demos keep recorded audio in memory and play it through the selected audio
+output. They do not save WAV files.
 
 ## 2. Run the knob and matrix on the UNO Q
 
