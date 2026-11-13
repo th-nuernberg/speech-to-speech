@@ -128,6 +128,15 @@ References: [UNO Q manual](https://docs.arduino.cc/tutorials/uno-q/user-manual/)
 
 # Scope of the Hackathon 
 
+Atypical Speech 
+[SPEECHES](https://www.th-nuernberg.de/einrichtungen-gesamt/wissenschaftliche-und-forschungskooperationen/speeches/)
+
+### Example Challenges 
+- Voice Cloning
+- Voice Effect Synthesis
+- Speech Enhancement (enriching pitch, prosody, metric...)
+- Real Time Speech Translation 
+
 
 ## Expected Deliverables 
 - Working prototype (need to include at least one moduli no)
@@ -145,6 +154,11 @@ References: [UNO Q manual](https://docs.arduino.cc/tutorials/uno-q/user-manual/)
 - Real world impact (20%)
 - Environmental Impact SCI (20%)
    [GreenSoftwareFoundation](https://sci.greensoftware.foundation/)
+- Presentation & Demo (20%)
+
+
+
+
   
 
 
