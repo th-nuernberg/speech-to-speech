@@ -123,3 +123,21 @@ References: [UNO Q manual](https://docs.arduino.cc/tutorials/uno-q/user-manual/)
 [Bridge API](https://docs.arduino.cc/software/app-lab/bridge/bridge-api),
 [Q matrix example](https://github.com/arduino/ArduinoCore-zephyr/tree/main/libraries/Arduino_LED_Matrix/examples/Basic),
 [librosa pitch shift](https://librosa.org/doc/0.10.2/generated/librosa.effects.pitch_shift.html).
+
+
+
+# Scope of the Hackathon 
+
+
+## Expected Deliverables 
+- Working prototype (need to include at least one moduli no)
+- source code repository
+- Short technical documentation
+- Project uploaded on the Arduino Project Hub
+  [Arduino Project Hub](https://projecthub.arduino.cc/)
+- 5-minute demo presentation
+- future roadmap 
+
+## Evaluation Criteria 
+
+
