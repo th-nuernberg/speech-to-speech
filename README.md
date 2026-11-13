@@ -26,6 +26,15 @@ Modulino Knob → STM32 → onboard 8×13 LED matrix
 USB microphone → Linux/Python → pitch shift → USB audio/headphones
 ```
 
+### Keyboard
+
+```sudo apt install onboard ```
+Install first and them the log in accessibility feature with virtual keyboard becomes available
+ 
+lighter (do not work for log in)
+``` sudo apt install matchbox-keyboard ```
+
+
 ## 1. Try audio on your laptop first
 
 Use Python 3.11/3.12. On Debian/UNO Q the host audio path needs PortAudio
